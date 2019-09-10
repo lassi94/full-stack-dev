@@ -1,0 +1,29 @@
+title SPA_new_note
+
+note over selain:
+Käyttäjä kirjoittaa formin input kenttään tekstiä ja painaa tallenna.
+
+selain->palvelin: HTTP POST https://{domain_name}/new_note
+
+note over palvelin:
+Käsittelee palvelimelle tulleen JSON datan ja tallentaa sen kantaan
+
+palvelin->selain: HTTP status 201, {"status":"OK"}
+
+note over selain:
+JS tapahtumankäsittelijä triggeröityy ja hakee notet palvelimelta AJAXilla
+
+selain->palvelin: HTTP GET https://{domain_name}/notes
+
+note over palvelin:
+Käsittelee pyynnön ja palauttaa notet takaisin clientille
+
+palvelin->selain: {"notes": ["name":"hello", "time":11323]}
+
+note over selain:
+selain renderöi palvelimelta tulleen JSON contentin.
+Käyttäjä on näin pysynyt samalla sivulla kokoajan ja palvelimelta tullut data renderöidään JavaScriptin avulla.
+
+
+
+

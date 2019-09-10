@@ -1,0 +1,40 @@
+title new_note
+
+note over selain:
+Käyttäjä kirjoittaa input kenttään noten ja painaa tallenna nappia.
+Tämän jälkeen selain lähettää seuraavat pyynnöt palvelimelle.
+end note
+
+selain->palvelin: HTTP POST https://{domain_name}/new_note
+
+note over palvelin:
+Palvelin käsittelee pyynnön ja tallentaaa noten kantaan
+end note
+
+palvelin->selain: 302 redirect Location:https://{domain_name}/notes
+
+selain->palvelin: HTTP GET https://{domain_name}/notes
+
+note over palvelin:
+palvelin käsittelee pyynnöön ja palauttaa html koodia takaisin client puolelle
+
+palvelin->selain: <div>jotain</div>
+
+selain->palvelin: HTTP GET https://{domain_name}/main.js
+palvelin->selain: javascriptiä
+
+selain->palvelin: HTTP GET https://{domain_name}/main.css
+palvelin->selain: css
+
+note over selain:
+tapahtumankäsittelijä triggeröityy ja tehdään haetaan notet palvelimelta
+
+selain->palvelin: HTTP GET https://{domain_name}/get_notes
+
+note over palvelin:
+Käsittelee pyynnön ja palauttaa notet
+
+palvelin->selain: {"note_array": ["name": "note", "time_stamp":"123123"], ["name":"note_2", "time_stamp":"1234"]}
+
+note over selain:
+selain renderöi palvelimelta tulevan contentin

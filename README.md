@@ -15,5 +15,5 @@ Contains all the exercises from part 2 of the course
 * kurssitiedot-part2 contains all the exercises from 2a
 * phonebook contains all the exercises from 2b, 2c, 2d and 2e which are associated with phonebook (including the starred exercises)
 * countries containt all the exercises associated with country searching and filtering (including the starred exercises)
- * *Note* the application uses environment variables for the weather API key
+   * *Note* the application uses environment variables for the weather API key
 

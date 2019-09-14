@@ -1,0 +1,24 @@
+title SPA_application_flow
+
+selain->palvelin: HTTP GET https://{domain_name}/index
+
+note over palvelin:
+palvelin käsittelee pyynnön ja palauttaa HTML template koodin
+
+palvelin->selain: <div>jotain</div>
+
+selain->palvelin: HTTP GET https://{domain_name}/main.js
+palvelin->selain: JS koodia
+
+note over selain:
+tapahtumankäsittelijä trigeröityy, jonka jälkeen haetaan notet palvelmelta ja kannasta
+
+selain->palvelin: HTTP GET https://{domain_name}/get_notes
+
+note over palvelin:
+Käsittelee pyynnön ja hakee notet kannasta. Tämän jälkeen ne palautetaan takaisin selaimelle JSON bodyssa
+
+palvelin->selain: {"notes":["name":"hello", "time_stamp":"123"]}
+
+note over selain:
+selain parsii palvelimelta tulleen datan ja esittää ne käyttäjälle

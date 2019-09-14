@@ -1,0 +1,25 @@
+{
+    "persons": [
+        {
+            "id": 0,
+            "name": "Arto Hellas",
+            "num": "09090909090"
+        },
+        {
+            "id": 1,
+            "name": "Pekka Mestari",
+            "num": "0123123123132"
+        },
+        {
+            "id": 2,
+            "name": "Pertti Seinä",
+            "num": "35345345345"
+        },
+        {
+            "id": 3,
+            "name": "Pentti Mustikanpoimija",
+            "num": "2345677345"
+        }
+    ]
+    
+}

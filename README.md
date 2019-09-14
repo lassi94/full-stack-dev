@@ -22,4 +22,4 @@ Contains all the exercises from part 3 of the course
 * phonebook_frontend contains the frontend of the phonebook application (Used for the production build)
 * fronend_API_phone contains all the exerices 3a and 3b and 3c command line application (3.12)
 * phonebook_integrated contains rest of the exercises fron 3c and 3d
-* *Note* the application uses environment variables for the db uri and for the port
+   * *Note* the application uses environment variables for the db uri and for the port

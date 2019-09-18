@@ -23,3 +23,6 @@ Contains all the exercises from part 3 of the course
 * fronend_API_phone contains all the exerices 3a and 3b and 3c command line application (3.12)
 * phonebook_integrated contains rest of the exercises fron 3c and 3d
    * *Note* the applications use environment variables for the db uri and for the port
+   
+ # part 4 folder
+ bloglist contains all the exercises from part 4 

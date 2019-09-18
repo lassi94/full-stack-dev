@@ -25,4 +25,4 @@ Contains all the exercises from part 3 of the course
    * *Note* the applications use environment variables for the db uri and for the port
    
  # part 4 folder
- bloglist contains all the exercises from part 4 
+ bloglist contains all the exercises from part 4

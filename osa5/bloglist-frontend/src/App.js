@@ -60,14 +60,14 @@ const App = () => {
         event.preventDefault()
 
         try{
-            const result = await loginService.login({ username, pass })
+            const result = await loginService.login({ username: username[0].value, pass: pass[0].value })
             if(result !== null){
 
                 localStorage.setItem('signed-in', JSON.stringify(result))
                 blogService.setJWT(result.sign)
                 setUser(result)
-                username.reset()
-                pass.reset()
+                username[1].reset()
+                pass[1].reset()
 
                 const blogs = await blogService.getAll()
                 setBLog(sortArray(blogs))
@@ -94,9 +94,9 @@ const App = () => {
         event.preventDefault()
 
         const obj = {
-            title: title.value,
-            author: author.value,
-            url: url.value
+            title: title[0].value,
+            author: author[0].value,
+            url: url[0].value
         }
 
         try{
@@ -110,9 +110,9 @@ const App = () => {
                 console.log(title)
             }, 3000)
 
-            url.reset()
-            author.reset()
-            title.reset()
+            url[1].reset()
+            author[1].reset()
+            title[1].reset()
 
 
         }catch(error){

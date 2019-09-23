@@ -11,13 +11,13 @@ const Login = ({ handleLogin, setUser, setPass }) => {
                         <td>Username:</td>
                     </tr>
                     <tr>
-                        <td><input type="text" value={setUser.value} name="Username" onChange={setUser.onChange}></input></td>
+                        <td><input type="text" name="Username" { ...setUser[0] }></input></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
                     </tr>
                     <tr>
-                        <td><input type="password" value={setPass.value} name="Password" onChange={setPass.onChange}></input></td>
+                        <td><input type="password" name="Password" { ...setPass[0] }></input></td>
                     </tr>
                     <tr>
                         <td><button type="submit" className="login-button">Login</button></td>

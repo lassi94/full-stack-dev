@@ -8,7 +8,7 @@ export const useChange = (initialValue) => {
         setValue(event.target.value)
     }
 
-    return {
-        value, onChange, reset: () => setValue(initialValue)
-    }
+    return [
+        { value, onChange }, { reset: () => setValue(initialValue) }
+    ]
 }

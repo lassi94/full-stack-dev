@@ -9,9 +9,9 @@ const Add = ({ submit, title, author, url }) => {
             <form onSubmit={submit}>
                 <table>
                     <tbody>
-                        <tr><td>title:</td><td><input type="text" value={title.value} name="title" onChange={title.onChange}></input></td></tr>
-                        <tr><td>author:</td><td><input type="text" value={author.value} name="author" onChange={author.onChange}></input></td></tr>
-                        <tr><td>url:</td><td><input type="text" value={url.value} name="url" onChange={url.onChange}></input></td></tr>
+                        <tr><td>title:</td><td><input type="text" name="title" { ...title[0] }></input></td></tr>
+                        <tr><td>author:</td><td><input type="text" name="author" { ...author[0] }></input></td></tr>
+                        <tr><td>url:</td><td><input type="text" name="url" { ...url[0] }></input></td></tr>
                         <tr><td><button type="submit">Create</button></td></tr>
                     </tbody>
                 </table>
@@ -22,9 +22,9 @@ const Add = ({ submit, title, author, url }) => {
 
 Add.propTypes = {
     submit: propTypes.func.isRequired,
-    title: propTypes.object.isRequired,
-    author: propTypes.object.isRequired,
-    url: propTypes.object.isRequired
+    title: propTypes.array.isRequired,
+    author: propTypes.array.isRequired,
+    url: propTypes.array.isRequired
 }
 
 export default Add

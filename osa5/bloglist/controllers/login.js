@@ -12,10 +12,10 @@ loginRouter.post('/', async (req, resp, next) => {
         console.log(body.username)
         console.log(body.pass)
 
-        const user = await User.findOne({username:body.username.value})
+        const user = await User.findOne({username:body.username})
 
         if(user){
-            const cmp = await bcrypt.compare(body.pass.value, user.passwordHash)
+            const cmp = await bcrypt.compare(body.pass, user.passwordHash)
             if(cmp !== false){
                 const tokenProps = {
                     id: user.id,

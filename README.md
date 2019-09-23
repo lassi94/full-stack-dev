@@ -29,6 +29,6 @@ Contains all the exercises from part 3 of the course
  
  # part 5 folder
  Contains all the exercises from part 5 of the course
- * bloglists contains the backend implementation
+ * bloglists contains the backend implementation which was used with the frontend
  * bloglist-frontend contains exercises 1 to 20
  * ultimate-hooks contains exercise number 21

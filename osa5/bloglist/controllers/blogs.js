@@ -16,11 +16,7 @@ router.get('/', async (req,resp,next)=>{
 router.post('/', async (req,resp,next) => {
     try{
 
-        console.log(req.token)
-
         const authentication = req.token
-
-        console.log(authentication)
 
         if(authentication !== undefined){
 

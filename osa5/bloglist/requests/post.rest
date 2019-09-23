@@ -1,0 +1,5 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkODExNDBhNzY1MmI0Mjc4YmI0OTEwOSIsInVzZXJuYW1lIjoidXVzaV9rYXl0dGFqYSIsImlhdCI6MTU2ODc0NzQwNH0.lViEhe3eXa36ZrdpwtVD39im3mptXUAwCodngr-zNY0
+
+{"title": "second note with token", "author": "Lehtinen", "content":"lorem ipsum solo", "url": "http://example.com", "likes":100}

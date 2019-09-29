@@ -9,7 +9,8 @@ const reducer = (state = [], action) => {
     case 'INIT_STATE':
       console.log("dataaaa", action.data)
       const newState = action.data
-      return newState
+      const sorted1 = sort(newState)
+      return sorted1
     case 'VOTE':
       const find = state.find(item => item.id === action.data.id)
       const change = {

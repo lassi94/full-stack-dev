@@ -51,8 +51,6 @@ router.post('/', async (req,resp,next) => {
 router.delete('/:id', async(req, resp, next) => {
 
     const id = req.params.id
-    console.log(id)
-
     const authentication = req.token
     
     if(authentication !== undefined){

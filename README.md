@@ -37,3 +37,8 @@ Contains all the exercises from part 3 of the course
  Contains all the exercises from part 6 of the course
  * unicafe-redux contains exercises 1 and 2
  * redux anecdotes contains the rest (exercises 3 - 21)
+
+# part 7 folder
+Contains exercises 1-3 and 5-15. The course feedback have been given on the moodle page (Exercise 20)
+* routed-anecdotes contains the exercises 1-3
+* bloglist and bloglist-frontend contains exercises 5-15

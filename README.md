@@ -47,3 +47,4 @@ Contains exercises 1-3 and 5-15. The course feedback have been given on the mood
 Contains exercises 1-20, 23-26
 * project and library-frontend contain exercises 1-12
 * project-two and library-frontend-second contain rest of the done exercises
+* The project and project-two backend implementations use environment variables

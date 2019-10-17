@@ -1,0 +1,25 @@
+{
+  "name": "osa8",
+  "version": "1.0.0",
+  "description": "part 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "LK",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-link-ws": "^1.0.19",
+    "apollo-server": "^2.9.6",
+    "bcrypt": "^3.0.6",
+    "dataloader": "^1.4.0",
+    "dot-env": "0.0.1",
+    "dotenv": "^8.1.0",
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.4",
+    "mongoose-unique-validator": "^2.0.3",
+    "subscriptions-transport-ws": "^0.9.16"
+  }
+}

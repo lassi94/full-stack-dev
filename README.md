@@ -42,3 +42,8 @@ Contains all the exercises from part 3 of the course
 Contains exercises 1-3 and 5-15. The course feedback have been given on the moodle page (Exercise 20)
 * routed-anecdotes contains the exercises 1-3
 * bloglist and bloglist-frontend contains exercises 5-15
+
+# part 8 folder
+Contains exercises 1-20, 23-26
+* project and library-frontend contain exercises 1-12
+* project-two and library-frontend-second contain rest of the done exercises
